@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Corporate - Engineering Tomorrow's Industrial Future</title>
+    <link rel="shortcut icon" href="assets/logos/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="LG Corporate delivers state-of-the-art industrial automation, ERP solutions, and engineering systems to transform manufacturing, logistics, and software infrastructure globally.">
+    <meta name="keywords"
+        content="LG Corporate, Industrial Automation, ERP solutions, Mechanical engineering, Software development, Digital transformation">
+    <meta name="author" content="LG Corporate">
+
+    <!-- Preconnect to Google Fonts for speed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="top">
+
+    <!-- 1. Header Component -->
+    <header>
+        <!-- Announcement Bar -->
+        <div class="announcement-bar" id="announcementBar" role="region" aria-label="Announcement Notice">
+            <div class="announcement-ticker-container">
+                <div class="animate-announcement-ticker">
+                    <span>🚨 LG Corporate named Top Industrial Automation Partner of 2026</span>
+                    <span style="margin: 0 40px;">|</span>
+                    <span>📈 Discover our new Industry 4.0 Digital Transformation blueprints below</span>
+                    <span style="margin: 0 40px;">|</span>
+                    <span>🌍 Empowering sustainable mechanical & civil projects across 40 countries</span>
+                </div>
+            </div>
+            <button class="announcement-bar-close" id="btnCloseAnnouncement"
+                aria-label="Close Announcement Bar">&times;</button>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="header-navigation" id="mainHeader">
+            <nav class="navbar-container" aria-label="Main Navigation">
+                <!-- Logo -->
+                <a href="#top" class="nav-logo" id="logoLink" aria-label="LG Corporate Homepage">
+                    <img src="assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo">
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-links" id="desktopNavLinks">
+                    <li><a href="#about" class="nav-link link-underline">About</a></li>
+                    <li><a href="#services" class="nav-link link-underline">Services</a></li>
+                    <li><a href="#industries" class="nav-link link-underline">Industries</a></li>
+                    <li><a href="#solutions" class="nav-link link-underline">Solutions</a></li>
+                    <li><a href="#timeline" class="nav-link link-underline">Timeline</a></li>
+                    <li><a href="#projects" class="nav-link link-underline">Projects</a></li>
+                    <li><a href="#faq" class="nav-link link-underline">FAQ</a></li>
+                </ul>
+
+                <!-- Action Items -->
+                <div class="nav-actions">
+                    <!-- Search Toggle -->
+                    <button class="btn-search-trigger" id="btnOpenSearch" aria-label="Open Search Search Overlay"
+                        aria-haspopup="dialog">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                    <!-- Contact CTA Button -->
+                    <a href="#contact" class="btn btn-primary" id="btnHeaderContact" style="padding: 10px 20px;">Contact
+                        Us</a>
+                    <!-- Mobile Hamburger Trigger -->
+                    <button class="btn-menu-trigger" id="btnOpenMobileMenu" aria-label="Open Navigation Menu"
+                        aria-expanded="false" aria-controls="mobileMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4.17a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM3 3.5a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H3z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Scroll Progress Bar -->
+                <div class="scroll-progress" id="scrollProgress"></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true" role="dialog">
+        <div class="mobile-menu-header">
+            <img src="assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo" style="height: 35px;">
+            <button class="mobile-menu-close" id="btnCloseMobileMenu"
+                aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
+            <li><a href="#industries" class="mobile-nav-link">Industries We Serve</a></li>
+            <li><a href="#solutions" class="mobile-nav-link">Tech Solutions</a></li>
+            <li><a href="#timeline" class="mobile-nav-link">Corporate Timeline</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+            <li><a href="#faq" class="mobile-nav-link">FAQ Support</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Get In Touch</a></li>
+        </ul>
+    </div>
+
+    <!-- Fullscreen Search Overlay Portal -->
+    <div class="search-overlay" id="searchPortal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-label="Site Search">
+        <div class="search-container">
+            <button class="search-close" id="btnCloseSearch" aria-label="Close Search Portal">&times;</button>
+            <form action="#" method="get" role="search">
+                <input type="search" class="search-input" id="siteSearchInput" autocomplete="off"
+                    aria-label="Search all corporate pages">
+            </form>
+            <div class="search-suggestions">
+                <p>Popular Search Capabilities:</p>
+                <div class="search-suggestion-tags">
+                    <a href="#solutions" class="search-tag">ERP Solutions</a>
+                    <a href="#solutions" class="search-tag">Industrial Automation</a>
+                    <a href="#services" class="search-tag">Instrumentation</a>
+                    <a href="#projects" class="search-tag">Lighthouse Cases</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- 2. Hero Component -->
+        <section class="hero-section" aria-label="Introduction Banner">
+            <!-- Full Screen Background Video -->
+            <div class="hero-video-wrapper">
+                <video autoplay loop muted playsinline poster="assets/images/about-company.jpg" id="heroBgVideo">
+                    <source src="assets/videos/hero.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Cinematic Overlay Layer -->
+            <div class="hero-video-overlay"></div>
+
+            <!-- Hero Central Typography -->
+            <div class="hero-content">
+                <div class="hero-buttons" data-reveal="fade-up" data-delay="1200">
+                    <a href="#solutions" class="btn btn-primary" id="heroBtnPrimary">Explore Capabilities</a>
+                    <a href="#contact" class="btn btn-secondary" id="heroBtnSecondary">Schedule Consultation</a>
+                </div>
+            </div>
+
+            <!-- Hero Background Audio Toggle -->
+            <button class="hero-audio-toggle glass-panel-dark" id="btnAudioToggle" aria-label="Unmute Hero Audio">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"
+                    id="audioIcon" style="display: block;">
+                    <!-- Muted Speaker (Initial state) -->
+                    <path
+                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+
+
+
+            <!-- Mouse Scroll Indicator -->
+            <div class="scroll-indicator-container">
+                <a href="#about" class="mouse-scroll" aria-label="Scroll down to content">
+                    <span class="mouse-scroll-dot animate-scroll-dot"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="grid-12">
+                    <!-- Text Content Area -->
+                    <div class="col-6 col-lg-12 about-content-left" data-reveal="fade-right">
+                        <span class="section-subtitle">Who We Are</span>
+                        <h2 class="section-title">We Build the Systems that <span>Power Global Enterprises</span></h2>
+                        <p style="margin-top: 24px; color: var(--color-text-muted);">
+                            <strong>LG Corporate</strong> is a multi-industry technology and engineering solutions
+                            company providing technical staffing, industrial services, software development, automation,
+                            and operational support across multiple sectors. As a single-source MNC, we deliver both
+                            elite technical talent and robust system solutions under one roof.
+                        </p>
+                        <p style="margin-top: 16px; color: var(--color-text-muted);">
+                            <strong>Our Vision:</strong> To simplify everyday business and industrial challenges by
+                            delivering innovative technology, engineering expertise, and skilled talent that create
+                            extraordinary workplace experiences.
+                        </p>
+                        <!-- Feature list with icons -->
+                        <div class="about-features">
+                            <div class="about-feature-item">
+                                <div class="about-feature-icon">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </div>
+                                <div class="about-feature-text">
+                                    <h4>Talent-Driven Integration</h4>
+                                    <p>Over 1,200 elite system engineers and solution architects globally.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-item">
+                                <div class="about-feature-icon">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M11.354 5.854a.5.5 0 0 0-.708-.708L7 8.793 5.354 7.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l4-4z" />
+                                    </svg>
+                                </div>
+                                <div class="about-feature-text">
+                                    <h4>Guaranteed Excellence</h4>
+                                    <p>All projects backed by rigorous WCAG, ISO-9001 and high-security compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parallax Image Area -->
+                    <div class="col-6 col-lg-12 about-media-right" data-reveal="fade-left" data-delay="300">
+                        <div class="about-image-wrapper zoom-bg-container">
+                            <img src="assets/images/about-company.jpg"
+                                alt="LG Corporate headquarters and active system engineers workspace">
+                            <div class="about-badge glass-panel-dark">
+                                <h3 class="font-numbers">30+</h3>
+                                <p>Years of Innovation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Statistics Section -->
+        <section class="section statistics-section" aria-label="Key Performance Indicators">
+            <div class="container">
+                <div class="stats-card-grid">
+                    <!-- Card 1 -->
+                    <div class="stat-glass-card glass-panel-dark" data-reveal="scale-up" data-delay="100">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: var(--color-accent);">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number font-numbers" data-counter-target="500" data-counter-suffix="+">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="stat-glass-card glass-panel-dark" data-reveal="scale-up" data-delay="200">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: var(--color-accent);">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number font-numbers" data-counter-target="100" data-counter-suffix="+">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="stat-glass-card glass-panel-dark" data-reveal="scale-up" data-delay="300">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: var(--color-accent);">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="stat-number font-numbers" data-counter-target="10" data-counter-suffix="+">0</div>
+                        <div class="stat-label">Industries Supported</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Our Capabilities</span>
+                    <h2 class="section-title">High-Performance <span>Engineering Solutions</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card" data-reveal="fade-up" data-delay="100">
+                        <div class="service-hover-bg"
+                            style="background-image: url('assets/images/products/automation.jpg');"></div>
+                        <div class="service-overlay-dark"></div>
+                        <div class="service-content-wrapper">
+                            <div class="service-top">
+                                <div class="service-icon">
+                                    <img src="assets/icons/automation.svg" alt="Automation Icon"
+                                        style="width:48px; height:48px;">
+                                </div>
+                                <div class="service-num">01</div>
+                            </div>
+                            <div class="service-body">
+                                <h3>Industrial Automation</h3>
+                                <p>Fully automated robot integration, programmable logic controllers (PLC), and SCADA
+                                    supervisory control layouts.</p>
+                            </div>
+                            <div class="service-footer">
+                                Learn More
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card" data-reveal="fade-up" data-delay="200">
+                        <div class="service-hover-bg"
+                            style="background-image: url('assets/images/products/engineering-tools.jpg');"></div>
+                        <div class="service-overlay-dark"></div>
+                        <div class="service-content-wrapper">
+                            <div class="service-top">
+                                <div class="service-icon">
+                                    <img src="assets/icons/engineering.svg" alt="Engineering Icon"
+                                        style="width:48px; height:48px;">
+                                </div>
+                                <div class="service-num">02</div>
+                            </div>
+                            <div class="service-body">
+                                <h3>Engineering Solutions</h3>
+                                <p>Custom structural CAD/CAM designs, industrial equipment layouts, and complex physical
+                                    simulation pipelines.</p>
+                            </div>
+                            <div class="service-footer">
+                                Learn More
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card" data-reveal="fade-up" data-delay="300">
+                        <div class="service-hover-bg"
+                            style="background-image: url('assets/images/products/hardware.jpg');"></div>
+                        <div class="service-overlay-dark"></div>
+                        <div class="service-content-wrapper">
+                            <div class="service-top">
+                                <div class="service-icon">
+                                    <img src="assets/icons/robotics.svg" alt="Robotics Icon"
+                                        style="width:48px; height:48px;">
+                                </div>
+                                <div class="service-num">03</div>
+                            </div>
+                            <div class="service-body">
+                                <h3>Hardware Integration</h3>
+                                <p>Reliable sensor deployment, localized device telemetry loops, and embedded
+                                    microcontroller systems.</p>
+                            </div>
+                            <div class="service-footer">
+                                Learn More
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Industries Section -->
+        <section class="section industries-section" id="industries">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Where We Operate</span>
+                    <h2 class="section-title">Pioneering <span>Industrial Sectors</span></h2>
+                </div>
+
+                <div class="industries-grid">
+                    <!-- Industry 1: Automobile -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="100">
+                        <img src="assets/images/industries/automobile.jpg" alt="Advanced vehicle assembly line"
+                            class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Mobility</span>
+                            <h3 class="industry-title">Automobile Industry</h3>
+                            <p class="industry-desc">Integrating robotic welding cells, precision conveyors, and IoT
+                                vehicle telemetry systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 2: Mechanical -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="200">
+                        <img src="assets/images/industries/mechanical.jpg" alt="Industrial gears and machinery assembly"
+                            class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Machinery</span>
+                            <h3 class="industry-title">Mechanical Engineering</h3>
+                            <p class="industry-desc">High-precision tolerance analysis, heavy tool design, and active
+                                structural simulations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 3: Construction -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="300">
+                        <img src="assets/images/industries/construction.jpg" alt="Modern construction site architecture"
+                            class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Infrastructure</span>
+                            <h3 class="industry-title">Construction Systems</h3>
+                            <p class="industry-desc">HVAC duct integrations, smart grid deployments, and structural
+                                management architectures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 4: Instrumentation -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="100">
+                        <img src="assets/images/industries/instrumentation.jpg"
+                            alt="Calibrated electronics instrumentation testing" class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Diagnostics</span>
+                            <h3 class="industry-title">Instrumentation & Control</h3>
+                            <p class="industry-desc">Precision temperature sensors, fluid flow diagnostic loops, and
+                                automated chemical control systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 5: Finance -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="200">
+                        <img src="assets/images/industries/finance.jpg" alt="Corporate finance board presentation data"
+                            class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Strategy</span>
+                            <h3 class="industry-title">Corporate Finance</h3>
+                            <p class="industry-desc">Asset planning optimization, resource depreciation modeling, and
+                                ERP budgeting integration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 6: Software -->
+                    <div class="industry-card" data-reveal="fade-up" data-delay="300">
+                        <img src="assets/images/industries/software-development.jpg"
+                            alt="Software programming layout on monitor screens" class="industry-card-img">
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-content">
+                            <span class="industry-tag">Digital</span>
+                            <h3 class="industry-title">Software Infrastructure</h3>
+                            <p class="industry-desc">High-load database arrays, custom warehouse software, and REST API
+                                connectors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Technology Solutions Section -->
+        <section class="section tech-section" id="solutions">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Enterprise Systems</span>
+                    <h2 class="section-title">Integrated <span>Technology Solutions</span></h2>
+                </div>
+
+                <div class="tech-tabs-layout">
+                    <!-- Left Tab Menu selectors -->
+                    <div class="tech-tabs-menu" role="tablist" aria-label="Technology Categories"
+                        data-reveal="fade-right">
+                        <button class="btn-tech-tab active" id="tab-erp" role="tab" aria-selected="true"
+                            aria-controls="panel-erp" data-tech-target="panel-erp">
+                            ERP Solutions
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <button class="btn-tech-tab" id="tab-software" role="tab" aria-selected="false"
+                            aria-controls="panel-software" data-tech-target="panel-software">
+                            Business Software
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <button class="btn-tech-tab" id="tab-automation" role="tab" aria-selected="false"
+                            aria-controls="panel-automation" data-tech-target="panel-automation">
+                            Industrial Automation
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <button class="btn-tech-tab" id="tab-eng" role="tab" aria-selected="false"
+                            aria-controls="panel-eng" data-tech-target="panel-eng">
+                            Engineering Solutions
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <button class="btn-tech-tab" id="tab-hardware" role="tab" aria-selected="false"
+                            aria-controls="panel-hardware" data-tech-target="panel-hardware">
+                            Hardware Integration
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <button class="btn-tech-tab" id="tab-equip" role="tab" aria-selected="false"
+                            aria-controls="panel-equip" data-tech-target="panel-equip">
+                            Industrial Equipment
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Right Content Panels (Toggled by JS) -->
+                    <div class="tech-panels-container" data-reveal="fade-left">
+
+                        <!-- Panel 1: ERP -->
+                        <div class="tech-tab-content-panel active" id="panel-erp" role="tabpanel"
+                            aria-labelledby="tab-erp">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/erp.jpg"
+                                        alt="Enterprise Resource Planning Dashboard display">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Enterprise Resource Planning (ERP)</h3>
+                                    <p>Streamline logistics, stock levels, sales cycles, and financial accounts within a
+                                        single centralized ledger database. Configured with modern REST architectures
+                                        for maximum third-party tooling compatibility.</p>
+                                    <ul class="tech-features-list">
+                                        <li>Real-time inventory management</li>
+                                        <li>Automated invoice & billing triggers</li>
+                                        <li>Advanced business intelligence dashboards</li>
+                                        <li>Secure data encryption standards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 2: Software -->
+                        <div class="tech-tab-content-panel" id="panel-software" role="tabpanel"
+                            aria-labelledby="tab-software">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/business-software.jpg"
+                                        alt="Optimized Business Software workflow">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Custom Business Software</h3>
+                                    <p>Tailor-made software assets designed to optimize staff operations, project
+                                        lifecycles, and database lookups. Native desktop overlays, web portals, and
+                                        mobile configurations.</p>
+                                    <ul class="tech-features-list">
+                                        <li>Fully responsive dashboard views</li>
+                                        <li>Offline database synchronization</li>
+                                        <li>Stripe & PayPal billing interfaces</li>
+                                        <li>Direct active directory authorization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 3: Automation -->
+                        <div class="tech-tab-content-panel" id="panel-automation" role="tabpanel"
+                            aria-labelledby="tab-automation">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/automation.jpg"
+                                        alt="Precision machinery automation controller setup">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Industrial Automation Architectures</h3>
+                                    <p>Supervise assembly parameters, conveyor motor metrics, and robotics cells through
+                                        integrated PLC code arrays. Minimizes operator manual intervention with high
+                                        reliability.</p>
+                                    <ul class="tech-features-list">
+                                        <li>SCADA graphical monitoring screens</li>
+                                        <li>Ethernet/IP device synchronization</li>
+                                        <li>Integrated emergency safety interlocks</li>
+                                        <li>Predictive maintenance alerts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 4: Engineering -->
+                        <div class="tech-tab-content-panel" id="panel-eng" role="tabpanel" aria-labelledby="tab-eng">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/engineering-tools.jpg"
+                                        alt="CAD mechanical tooling design layout">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Specialized Engineering Blueprints</h3>
+                                    <p>Ensure hardware reliability under extreme thermal and pressure loads using
+                                        advanced FEA modeling methods. Designs scale to micro-tolerances.</p>
+                                    <ul class="tech-features-list">
+                                        <li>Precise 3D CAD modeling assets</li>
+                                        <li>Dynamic stress load analysis</li>
+                                        <li>Automated Bill of Materials listing</li>
+                                        <li>CNC tooling conversion paths</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 5: Hardware -->
+                        <div class="tech-tab-content-panel" id="panel-hardware" role="tabpanel"
+                            aria-labelledby="tab-hardware">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/hardware.jpg"
+                                        alt="Hardware microcontrollers wiring layouts">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Hardware Telemetry Integration</h3>
+                                    <p>Collect diagnostic analytics directly from shop floors. Wire low-power sensors,
+                                        wireless mesh hubs, and central database relays for edge diagnostics.</p>
+                                    <ul class="tech-features-list">
+                                        <li>Modbus & CAN Bus communications</li>
+                                        <li>IoT gateway data pipelines</li>
+                                        <li>Ultra-low power sleep states</li>
+                                        <li>Hardware-level secure key storage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 6: Equipment -->
+                        <div class="tech-tab-content-panel" id="panel-equip" role="tabpanel"
+                            aria-labelledby="tab-equip">
+                            <div class="tech-details-card">
+                                <div class="tech-media">
+                                    <img src="assets/images/products/industrial-equipment.jpg"
+                                        alt="Heavy industrial equipment setup">
+                                </div>
+                                <div class="tech-info">
+                                    <h3>Heavy Industrial Machinery</h3>
+                                    <p>Reliable hydraulic presses, continuous linear actuators, and high-performance
+                                        fluid pumps designed for high-stress manufacturing lines.</p>
+                                    <ul class="tech-features-list">
+                                        <li>Hardened carbon steel structures</li>
+                                        <li>Variable speed motor matching</li>
+                                        <li>Integrated vibration sensors</li>
+                                        <li>Extended MTBF components</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Why Choose Us Section -->
+        <section class="section why-section">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Our Advantages</span>
+                    <h2 class="section-title">Why Global Leaders <span>Choose Us</span></h2>
+                </div>
+
+                <div class="why-grid">
+                    <!-- Card 1 -->
+                    <div class="why-card" data-reveal="fade-up" data-delay="100">
+                        <div class="why-card-icon">⚡</div>
+                        <h3>Premium Engineering</h3>
+                        <p>Our solutions utilize high-speed communication interfaces and durable structural elements to
+                            assure 99.9% operational uptime.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="why-card" data-reveal="fade-up" data-delay="200">
+                        <div class="why-card-icon">🔒</div>
+                        <h3>Military-Grade Security</h3>
+                        <p>All network modules, remote APIs, and centralized databases adhere to modern security
+                            protocols and regional encryption standards.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="why-card" data-reveal="fade-up" data-delay="300">
+                        <div class="why-card-icon">👥</div>
+                        <h3>Enterprise Support</h3>
+                        <p>Dedicated system technicians are available 24/7 to perform remote analytics checks and
+                            schedule emergency maintenance dispatches.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Timeline Section (Milestones) -->
+        <section class="section timeline-section" id="timeline">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Our Journey</span>
+                    <h2 class="section-title">Corporate Milestone <span>Timeline</span></h2>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress" id="timelineProgress"></div>
+                    </div>
+
+                    <!-- Timeline Milestone 1 -->
+                    <div class="timeline-item timeline-item-left active" data-reveal="fade-right">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-year">1995</div>
+                        <div class="timeline-card">
+                            <h3>Company Started</h3>
+                            <p>LG Corporate is founded as a specialized mechanical repair and diagnostic company,
+                                focusing on localized manufacturing tooling.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Milestone 2 -->
+                    <div class="timeline-item timeline-item-right" data-reveal="fade-left" data-delay="200">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-year">2005</div>
+                        <div class="timeline-card">
+                            <h3>Expansion & Integration</h3>
+                            <p>Acquires three engineering design firms, expanding core operations to encompass
+                                structural CAD and CNC machinery integrations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Milestone 3 -->
+                    <div class="timeline-item timeline-item-left" data-reveal="fade-right" data-delay="200">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-card">
+                            <h3>Industrial Automation Push</h3>
+                            <p>Integrates dedicated PLC/SCADA programming divisions. Becomes key integration partner for
+                                high-speed automobile assembly lines.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Milestone 4 -->
+                    <div class="timeline-item timeline-item-right" data-reveal="fade-left" data-delay="200">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-card">
+                            <h3>Digital Cloud Transformation</h3>
+                            <p>Launches custom ERP software systems, IoT telemetry hubs, and secure cloud pipelines for
+                                smart manufacturing operations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Milestone 5 -->
+                    <div class="timeline-item timeline-item-left" data-reveal="fade-right" data-delay="200">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-year">Today</div>
+                        <div class="timeline-card">
+                            <h3>Future Ready Industry 4.0</h3>
+                            <p>Developing predictive diagnostics modules to minimize downtime across international
+                                manufacturing grids.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Featured Projects -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Our Portfolio</span>
+                    <h2 class="section-title">Featured Case <span>Studies</span></h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-reveal="fade-up" data-delay="100">
+                        <div class="project-img-wrapper zoom-bg-container">
+                            <img src="assets/images/industries/automobile.jpg" alt="Automated assembly line conveyor">
+                            <div class="project-results-badge" style="background-color: var(--color-accent);">Success
+                            </div>
+                        </div>
+                        <div class="project-info-box">
+                            <span class="project-category">Mobility & IoT</span>
+                            <h3 class="project-title">Smart Automotive Assembly Line</h3>
+                            <p class="project-desc">Implemented a synchronized conveyor network, custom PLC programming,
+                                and active vibration sensors for an elite vehicle brand.</p>
+                            <div class="project-results-list">
+                                <div class="project-metric-item">
+                                    <div class="project-metric-num font-numbers">+35%</div>
+                                    <div class="project-metric-lbl">Production Yield</div>
+                                </div>
+                                <div class="project-metric-item">
+                                    <div class="project-metric-num font-numbers">-50%</div>
+                                    <div class="project-metric-lbl">Line Downtime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-reveal="fade-up" data-delay="200">
+                        <div class="project-img-wrapper zoom-bg-container">
+                            <img src="assets/images/products/erp.jpg" alt="Data display tracking inventory items">
+                            <div class="project-results-badge" style="background-color: var(--color-secondary);">
+                                Optimized</div>
+                        </div>
+                        <div class="project-info-box">
+                            <span class="project-category">Logistics ERP</span>
+                            <h3 class="project-title">Global ERP Warehouse Deployment</h3>
+                            <p class="project-desc">Connected database arrays, barcode scanners, and inventory trackers
+                                across 14 European distribution warehouses.</p>
+                            <div class="project-results-list">
+                                <div class="project-metric-item">
+                                    <div class="project-metric-num font-numbers">99.8%</div>
+                                    <div class="project-metric-lbl">Data Accuracy</div>
+                                </div>
+                                <div class="project-metric-item">
+                                    <div class="project-metric-num font-numbers">-2.4d</div>
+                                    <div class="project-metric-lbl">Lead Time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Testimonials (Carousel Slider) -->
+        <section class="section testimonials-section" aria-label="Customer Reviews">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Client Feedback</span>
+                    <h2 class="section-title">What Our <span>Partners Say</span></h2>
+                </div>
+
+                <div class="testimonials-carousel-container" data-reveal="fade-up" data-delay="200">
+                    <div class="testimonials-track">
+
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel-dark">
+                                <div class="testimonial-rating">★★★★★</div>
+                                <p class="testimonial-text">"LG Corporate's automation architecture transformed our
+                                    assembly line speed. Their engineering teams provided outstanding telemetry
+                                    calibration."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="assets/images/industries/hr.jpg"
+                                            alt="Marcus Vance - Chief Technology Officer">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Marcus Vance</h4>
+                                        <p>CTO, Vanguard Automotives</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel-dark">
+                                <div class="testimonial-rating">★★★★★</div>
+                                <p class="testimonial-text">"Our database sync latency went from 8 seconds to near
+                                    instantaneous. Their custom ERP database structures are incredibly robust."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="assets/images/industries/it-support.jpg"
+                                            alt="Sarah Lin - Operations Director">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sarah Lin</h4>
+                                        <p>Operations Director, Logistics Hub Co.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel-dark">
+                                <div class="testimonial-rating">★★★★★</div>
+                                <p class="testimonial-text">"Their predictive sensor hardware dispatches alerts before
+                                    machinery failures happen, keeping our continuous lines running at maximum
+                                    capacity."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="assets/images/industries/mechanical.jpg"
+                                            alt="Dirk Koehler - Production Manager">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Dirk Koehler</h4>
+                                        <p>Production Manager, Rhein-Tech AG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 (Hidden initially, scrolled by carousel) -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel-dark">
+                                <div class="testimonial-rating">★★★★★</div>
+                                <p class="testimonial-text">"Outstanding structural simulations! Their mechanical
+                                    modeling gave us absolute structural peace of mind before casting heavy machine
+                                    frames."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="assets/images/industries/construction.jpg"
+                                            alt="Elena Rostova - Engineering Lead">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Elena Rostova</h4>
+                                        <p>Engineering Lead, Apex Structures</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation controls -->
+                    <div class="carousel-controls">
+                        <button class="btn-carousel-nav prev" aria-label="Previous Testimonial">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                            </svg>
+                        </button>
+                        <div class="carousel-dots">
+                            <!-- Dots dynamically added by JS -->
+                        </div>
+                        <button class="btn-carousel-nav next" aria-label="Next Testimonial">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 7.5H1.5A.5.5 0 0 0 1 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. FAQ Accordion Section -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="section-header" data-reveal="fade-up">
+                    <span class="section-subtitle">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                </div>
+
+                <div class="faq-accordion-box" data-reveal="fade-up" data-delay="200">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-1">
+                            Do you custom-build ERP software or deploy out-of-the-box setups?
+                            <span class="faq-icon-arrow">▼</span>
+                        </button>
+                        <div class="faq-body" id="faq-ans-1">
+                            <div class="faq-body-content">
+                                We custom-build and tailor ERP solutions using modular framework structures. This
+                                ensures that you only pay for the features you actually need, and our custom database
+                                connectors hook natively into your pre-existing industrial hardware without
+                                configuration bottlenecks.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-2">
+                            Can your automation division work with other brands like Siemens or ABB?
+                            <span class="faq-icon-arrow">▼</span>
+                        </button>
+                        <div class="faq-body" id="faq-ans-2">
+                            <div class="faq-body-content">
+                                Absolutely. Our engineers are certified to integrate with hardware from Siemens, ABB,
+                                Allen-Bradley, Schneider Electric, and Omron. We write vendor-agnostic control logic
+                                that interfaces across complex, multi-brand manufacturing lines.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-3">
+                            What security measures protect localized database arrays?
+                            <span class="faq-icon-arrow">▼</span>
+                        </button>
+                        <div class="faq-body" id="faq-ans-3">
+                            <div class="faq-body-content">
+                                Our databases implement AES-256 state encryption, role-based access levels, and secure
+                                token authorization routines. For edge hardware modules, we utilize physical
+                                Cryptographic Co-processors to store device keys and authenticate sensor packets
+                                securely.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-4">
+                            What is your typical project cycle duration?
+                            <span class="faq-icon-arrow">▼</span>
+                        </button>
+                        <div class="faq-body" id="faq-ans-4">
+                            <div class="faq-body-content">
+                                Project cycles vary from 4 weeks for specialized CAD mechanical designs, up to 6 months
+                                for complete automotive assembly line automation integrations and global ERP rollouts.
+                                We coordinate clear roadmap sprints to keep your teams updated.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. Contact CTA Section -->
+        <section class="section cta-section" id="contact"
+            style="background-image: url('assets/images/about-company.jpg');">
+            <div class="cta-overlay"></div>
+            <div class="container cta-container">
+                <h2 class="cta-title" data-reveal="fade-up">Ready to Build the Future?</h2>
+                <p class="cta-desc" data-reveal="fade-up" data-delay="200">
+                    Partner with our team of elite system engineers and software architects to automate your workflows,
+                    secure your databases, and scale your industrial operations.
+                </p>
+                <div data-reveal="fade-up" data-delay="300">
+                    <a href="mailto:info@lgcorporate.com" class="btn btn-primary arrow-hover" id="ctaMailTo">
+                        Let's Work Together
+                        <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 15. Footer Component -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="grid-12 footer-top">
+
+                <!-- Column 1: Info -->
+                <div class="col-4 col-lg-12">
+                    <div class="footer-logo">
+                        <img src="assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo">
+                    </div>
+                    <p class="footer-about-text">
+                        Designing and deploying premium automation, software systems, and engineering blueprints for
+                        industrial efficiency.
+                        <br><br>
+                        <strong>Address:</strong> L.G. Technology, Gandhipuram, Coimbatore - 641012
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://linkedin.com/company/lg-corporate" class="social-link"
+                            aria-label="LG Corporate LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.07 5.07 0 0 0 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Solutions -->
+                <div class="col-3 col-lg-4 col-md-6 col-sm-12">
+                    <h4 class="footer-column-title">Solutions</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#solutions">ERP Platforms</a></li>
+                        <li><a href="#solutions">Business Software</a></li>
+                        <li><a href="#solutions">Industrial Automation</a></li>
+                        <li><a href="#solutions">Hardware Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Industries -->
+                <div class="col-2 col-lg-4 col-md-6 col-sm-12">
+                    <h4 class="footer-column-title">Industries</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#industries">Automobile</a></li>
+                        <li><a href="#industries">Mechanical</a></li>
+                        <li><a href="#industries">Construction</a></li>
+                        <li><a href="#industries">Software</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-3 col-lg-4 col-md-12 col-sm-12">
+                    <h4 class="footer-column-title">Stay Updated</h4>
+                    <div class="footer-newsletter">
+                        <p>Subscribe to receive industrial transformation insights.</p>
+                        <form class="newsletter-form" action="#" method="post" aria-label="Subscribe to newsletter">
+                            <input type="email" placeholder="Email Address" class="newsletter-input" required
+                                aria-label="Enter your email address">
+                            <button class="btn-newsletter-submit" type="submit"
+                                aria-label="Submit Email Address">➔</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 LG Corporate. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="pages/about.html" id="linkFooterAbout">About</a>
+                    <a href="pages/services.html" id="linkFooterServices">Services</a>
+                    <a href="pages/products.html" id="linkFooterProducts">Products</a>
+                    <a href="pages/industries.html" id="linkFooterIndustries">Industries</a>
+                    <a href="pages/carrers.html" id="linkFooterCareers">Careers</a>
+                    <a href="pages/contact.html" id="linkFooterContact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modular Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

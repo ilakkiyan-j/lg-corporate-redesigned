@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - LG Corporate Enterprise Software & Systems</title>
+  <link rel="shortcut icon" href="../assets/logos/favicon.png" type="image/x-icon">
+  <meta name="description" content="Explore LG Corporate's products: custom ERP platforms, SCADA diagnostic suites, and automated machinery controls.">
+  
+  <!-- Preconnect to Google Fonts for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Cascading Style Sheets -->
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  
+  <style>
+    .subpage-hero {
+      padding: 180px 0 80px 0;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      color: var(--color-text-light);
+      text-align: center;
+    }
+    .product-grid-item {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: var(--transition-smooth);
+    }
+    .product-grid-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(10, 31, 51, 0.05);
+    }
+    .product-media-box {
+      height: 240px;
+      overflow: hidden;
+    }
+    .product-media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .product-grid-item:hover .product-media-box img {
+      transform: scale(1.05);
+    }
+    .product-desc-box {
+      padding: 30px;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header Component -->
+  <header>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" role="region" aria-label="Announcement Notice">
+      <div class="announcement-ticker-container">
+        <div class="animate-announcement-ticker">
+          <span>🚨 LG Corporate named Top Industrial Automation Partner of 2026</span>
+          <span style="margin: 0 40px;">|</span>
+          <span>📈 Discover our new Industry 4.0 Digital Transformation blueprints below</span>
+        </div>
+      </div>
+      <button class="announcement-bar-close" id="btnCloseAnnouncement" aria-label="Close Announcement Bar">&times;</button>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-navigation" id="mainHeader">
+      <nav class="navbar-container" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="../index.html" class="nav-logo" id="logoLink" aria-label="LG Corporate Homepage">
+          <img src="../assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo">
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-links" id="desktopNavLinks">
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#services" class="nav-link">Services</a></li>
+          <li><a href="../index.html#industries" class="nav-link">Industries</a></li>
+          <li><a href="../index.html#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="../index.html#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="nav-actions">
+          <button class="btn-search-trigger" id="btnOpenSearch" aria-label="Open Search Overlay" aria-haspopup="dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          <a href="../index.html#contact" class="btn btn-primary" id="btnHeaderContact" style="padding: 10px 20px;">Contact Us</a>
+          <button class="btn-menu-trigger" id="btnOpenMobileMenu" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4.17a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM3 3.5a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H3z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true" role="dialog">
+    <div class="mobile-menu-header">
+      <img src="../assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo" style="height: 35px;">
+      <button class="mobile-menu-close" id="btnCloseMobileMenu" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="../index.html#about" class="mobile-nav-link">About Us</a></li>
+      <li><a href="../index.html#services" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="../index.html#industries" class="mobile-nav-link">Industries We Serve</a></li>
+      <li><a href="../index.html#solutions" class="mobile-nav-link">Tech Solutions</a></li>
+      <li><a href="../index.html#timeline" class="mobile-nav-link">Corporate Timeline</a></li>
+      <li><a href="../index.html#projects" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="../index.html#faq" class="mobile-nav-link">FAQ Support</a></li>
+      <li><a href="../index.html#contact" class="mobile-nav-link">Get In Touch</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Subpage Hero banner -->
+    <section class="subpage-hero" aria-label="Products Hero">
+      <div class="container">
+        <span class="section-subtitle" style="color: var(--color-accent);">Software & Systems</span>
+        <h1 class="fs-hero-title font-heading" style="margin-top: 10px;">Our Enterprise Products</h1>
+        <p style="margin-top: 20px; max-width: 650px; margin-left: auto; margin-right: auto; opacity: 0.85;">
+          Modular database modules, real-time analytics portals, and robust PLC actuator configurations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-12">
+          
+          <!-- Product 1 -->
+          <div class="col-4 col-lg-6 col-md-12 product-grid-item" data-reveal="fade-up" data-delay="100">
+            <div class="product-media-box">
+              <img src="../assets/images/products/erp.jpg" alt="Enterprise Database Panel">
+            </div>
+            <div class="product-desc-box">
+              <h3 class="font-heading" style="font-weight: 700; color: var(--color-primary); margin-bottom: 12px; font-size: 1.35rem;">LG Enterprise ERP</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 20px;">
+                Connecting warehouse inputs, inventory scales, and invoice ledgers dynamically across your enterprise network.
+              </p>
+              <a href="../index.html#contact" class="btn btn-dark" style="padding: 10px 20px; width: 100%;">Request Demo</a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-4 col-lg-6 col-md-12 product-grid-item" data-reveal="fade-up" data-delay="200">
+            <div class="product-media-box">
+              <img src="../assets/images/products/automation.jpg" alt="PLC controller logic modules">
+            </div>
+            <div class="product-desc-box">
+              <h3 class="font-heading" style="font-weight: 700; color: var(--color-primary); margin-bottom: 12px; font-size: 1.35rem;">PLC Automation Core</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 20px;">
+                Hardened control routines and SCADA screens designed to synchronize conveyor networks and welding actuators.
+              </p>
+              <a href="../index.html#contact" class="btn btn-dark" style="padding: 10px 20px; width: 100%;">View Spec Sheet</a>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-4 col-lg-6 col-md-12 product-grid-item" data-reveal="fade-up" data-delay="300">
+            <div class="product-media-box">
+              <img src="../assets/images/products/hardware.jpg" alt="Wireless telemetry mesh node router">
+            </div>
+            <div class="product-desc-box">
+              <h3 class="font-heading" style="font-weight: 700; color: var(--color-primary); margin-bottom: 12px; font-size: 1.35rem;">IoT Telemetry Bridge</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 20px;">
+                Low-power hardware nodes that capture machinery performance logs and stream alerts directly to diagnostic portals.
+              </p>
+              <a href="../index.html#contact" class="btn btn-dark" style="padding: 10px 20px; width: 100%;">Request Quote</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 LG Corporate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="industries.html">Industries</a>
+          <a href="carrers.html">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/navbar.js"></script>
+  <script src="../js/counter.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

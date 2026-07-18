@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About LG Corporate - Talent & Engineering Excellence</title>
+  <link rel="shortcut icon" href="../assets/logos/favicon.png" type="image/x-icon">
+  <meta name="description" content="Learn about LG Corporate's history, global engineering teams, executive values, and vision for sustainable industrial systems.">
+  
+  <!-- Preconnect to Google Fonts for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Cascading Style Sheets -->
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  
+  <style>
+    /* Subpage specific styles */
+    .subpage-hero {
+      padding: 180px 0 80px 0;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      color: var(--color-text-light);
+      text-align: center;
+    }
+    .value-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: var(--transition-smooth);
+    }
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(10, 31, 51, 0.05);
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header Component -->
+  <header>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" role="region" aria-label="Announcement Notice">
+      <div class="announcement-ticker-container">
+        <div class="animate-announcement-ticker">
+          <span>🚨 LG Corporate named Top Industrial Automation Partner of 2026</span>
+          <span style="margin: 0 40px;">|</span>
+          <span>📈 Discover our new Industry 4.0 Digital Transformation blueprints below</span>
+        </div>
+      </div>
+      <button class="announcement-bar-close" id="btnCloseAnnouncement" aria-label="Close Announcement Bar">&times;</button>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-navigation" id="mainHeader">
+      <nav class="navbar-container" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="../index.html" class="nav-logo" id="logoLink" aria-label="LG Corporate Homepage">
+          <img src="../assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo">
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-links" id="desktopNavLinks">
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#services" class="nav-link">Services</a></li>
+          <li><a href="../index.html#industries" class="nav-link">Industries</a></li>
+          <li><a href="../index.html#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="../index.html#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="nav-actions">
+          <button class="btn-search-trigger" id="btnOpenSearch" aria-label="Open Search Overlay" aria-haspopup="dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          <a href="../index.html#contact" class="btn btn-primary" id="btnHeaderContact" style="padding: 10px 20px;">Contact Us</a>
+          <button class="btn-menu-trigger" id="btnOpenMobileMenu" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4.17a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM3 3.5a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H3z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true" role="dialog">
+    <div class="mobile-menu-header">
+      <img src="../assets/logos/lg-coporate-logo.png" alt="LG Corporate Logo" style="height: 35px;">
+      <button class="mobile-menu-close" id="btnCloseMobileMenu" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="../index.html#about" class="mobile-nav-link">About Us</a></li>
+      <li><a href="../index.html#services" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="../index.html#industries" class="mobile-nav-link">Industries We Serve</a></li>
+      <li><a href="../index.html#solutions" class="mobile-nav-link">Tech Solutions</a></li>
+      <li><a href="../index.html#timeline" class="mobile-nav-link">Corporate Timeline</a></li>
+      <li><a href="../index.html#projects" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="../index.html#faq" class="mobile-nav-link">FAQ Support</a></li>
+      <li><a href="../index.html#contact" class="mobile-nav-link">Get In Touch</a></li>
+    </ul>
+  </div>
+
+  <!-- Fullscreen Search Overlay Portal -->
+  <div class="search-overlay" id="searchPortal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site Search">
+    <div class="search-container">
+      <button class="search-close" id="btnCloseSearch" aria-label="Close Search Portal">&times;</button>
+      <form action="#" method="get" role="search">
+        <input type="search" class="search-input" id="siteSearchInput" autocomplete="off" aria-label="Search all corporate pages">
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <!-- Subpage Hero banner -->
+    <section class="subpage-hero" aria-label="About Us Hero">
+      <div class="container">
+        <span class="section-subtitle" style="color: var(--color-accent);">LG Corporate Profile</span>
+        <h1 class="fs-hero-title font-heading" style="margin-top: 10px;">Our Vision & Values</h1>
+        <p style="margin-top: 20px; max-width: 650px; margin-left: auto; margin-right: auto; opacity: 0.85;">
+          Bridging physical industrial assets with cloud computing to deliver continuous operations, security, and yield growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Company Story Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-12">
+          <div class="col-7 col-lg-12" data-reveal="fade-right">
+            <h2 class="section-title">Driving <span>Multi-Industry Innovation</span></h2>
+            <p style="margin-top: 24px; color: var(--color-text-muted);">
+              <strong>LG Corporate</strong> is a multi-industry technology and engineering solutions company providing technical staffing, industrial services, software development, automation, and business support across multiple sectors. As a single-source MNC, we deliver both elite technical talent and robust system solutions under one roof.
+            </p>
+            <p style="margin-top: 16px; color: var(--color-text-muted);">
+              <strong>Our Vision:</strong> To simplify everyday business and industrial challenges by delivering innovative technology, engineering expertise, and skilled talent that create extraordinary workplace experiences.
+            </p>
+          </div>
+          <div class="col-5 col-lg-12" data-reveal="fade-left" data-delay="300">
+            <div class="about-image-wrapper zoom-bg-container">
+              <img src="../assets/images/about-company.jpg" alt="Active mechanical assembly bay">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values Grid -->
+    <section class="section" style="background-color: #F1F5F9;">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-subtitle">What Guides Us</span>
+          <h2 class="section-title">Our Operational <span>Values</span></h2>
+        </div>
+        
+        <div class="grid-12">
+          <div class="col-4 col-lg-12 value-card" data-reveal="fade-up" data-delay="100">
+            <h3 class="font-heading" style="font-weight: 600; color: var(--color-primary); margin-bottom: 12px;">1. Client Integration First</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted);">We integrate seamlessly into existing client structures, respecting legacy infrastructure while implementing secure digital upgrades.</p>
+          </div>
+          <div class="col-4 col-lg-12 value-card" data-reveal="fade-up" data-delay="200">
+            <h3 class="font-heading" style="font-weight: 600; color: var(--color-primary); margin-bottom: 12px;">2. Precision Diagnostics</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted);">We base our recommendations on actual telemetry checks and stress analysis curves rather than abstract projection charts.</p>
+          </div>
+          <div class="col-4 col-lg-12 value-card" data-reveal="fade-up" data-delay="300">
+            <h3 class="font-heading" style="font-weight: 600; color: var(--color-primary); margin-bottom: 12px;">3. Absolute Security</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-muted);">All logic code is verified for vulnerabilities. We lock hardware telemetry nodes with physical secure-key elements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 LG Corporate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="industries.html">Industries</a>
+          <a href="carrers.html">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/navbar.js"></script>
+  <script src="../js/counter.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

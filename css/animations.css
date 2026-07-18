@@ -1,0 +1,192 @@
+/* ==========================================================================
+   LG CORPORATE - ANIMATIONS & TRANSITIONS (css/animations.css)
+   ========================================================================== */
+
+/* 1. Core Scroll Reveal Animations (GSAP-style using active classes) */
+[data-reveal] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Directions */
+[data-reveal="fade-up"] {
+  transform: translateY(50px);
+}
+
+[data-reveal="fade-down"] {
+  transform: translateY(-50px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(50px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(-50px);
+}
+
+[data-reveal="scale-up"] {
+  transform: scale(0.92);
+}
+
+[data-reveal="clip-right"] {
+  clip-path: inset(0 100% 0 0);
+  opacity: 1;
+  transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active State (applied by JS) */
+[data-reveal].active {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+[data-reveal="clip-right"].active {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Stagger Delays (100ms - 1000ms) */
+.active.delay-100 { transition-delay: 100ms; }
+.active.delay-200 { transition-delay: 200ms; }
+.active.delay-300 { transition-delay: 300ms; }
+.active.delay-400 { transition-delay: 400ms; }
+.active.delay-500 { transition-delay: 500ms; }
+.active.delay-600 { transition-delay: 600ms; }
+.active.delay-700 { transition-delay: 700ms; }
+.active.delay-800 { transition-delay: 800ms; }
+.active.delay-900 { transition-delay: 900ms; }
+.active.delay-1000 { transition-delay: 1000ms; }
+
+/* Durations */
+.duration-slow { transition-duration: 1.2s; }
+.duration-fast { transition-duration: 0.4s; }
+
+/* 2. Keyframes for continuous animations */
+
+/* Mouse Scroll Indicator Pulse */
+@keyframes scrollIndicator {
+  0% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(12px) scaleY(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0;
+  }
+}
+
+.animate-scroll-dot {
+  animation: scrollIndicator 2s infinite cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Floating Card Keyframes */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-card-1 { animation: float 6s ease-in-out infinite; }
+.floating-card-2 { animation: float 8s ease-in-out infinite; }
+.floating-card-3 { animation: float 7s ease-in-out infinite; }
+
+/* Brand Logo Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Hover glow keyframe for elements */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(230, 57, 70, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(230, 57, 70, 0.45); }
+  100% { box-shadow: 0 0 10px rgba(230, 57, 70, 0.2); }
+}
+
+.hover-glow:hover {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Announcement Bar Ticker scrolling */
+@keyframes scrollText {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-announcement-ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollText 20s linear infinite;
+}
+
+/* 3. Micro-interactions */
+
+/* Link line expansion effect */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Arrow move hover effect */
+.arrow-hover {
+  display: inline-flex;
+  align-items: center;
+}
+
+.arrow-hover svg {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.arrow-hover:hover svg {
+  transform: translateX(6px);
+}
+
+/* Ken Burns background zoom for standard cards */
+.zoom-bg-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-bg-container img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-bg-container:hover img {
+  transform: scale(1.08);
+}

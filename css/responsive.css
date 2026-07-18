@@ -1,0 +1,247 @@
+/* ==========================================================================
+   LG CORPORATE - RESPONSIVE STYLES (css/responsive.css)
+   ========================================================================== */
+
+/* 1. Large Displays (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .hero-stats-panel {
+    bottom: 10%;
+  }
+}
+
+/* 2. 4K Displays & Ultra HD (min-width: 2560px) */
+@media (min-width: 2560px) {
+  body {
+    font-size: 1.35rem; /* Larger baseline for readability */
+  }
+
+  .navbar-container {
+    padding: 20px 48px;
+  }
+
+  .hero-stats-panel {
+    bottom: 12%;
+  }
+
+  .service-card {
+    min-height: 480px;
+    padding: 60px;
+  }
+
+  .faq-accordion-box {
+    max-width: 1200px;
+  }
+
+  .industry-card {
+    height: 600px;
+  }
+
+  .timeline-container {
+    max-width: 1400px;
+  }
+}
+
+/* 3. Medium & Small Notebooks (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none; /* Hide primary links for mobile burger trigger */
+  }
+
+  .btn-menu-trigger {
+    display: block; /* Show burger trigger */
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns on tablet */
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-tabs-layout {
+    grid-template-columns: 1fr; /* Stack tabs vertically above content */
+    gap: 32px;
+  }
+
+  .tech-tabs-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    gap: 16px;
+  }
+
+  .btn-tech-tab {
+    flex-shrink: 0;
+    padding: 16px 24px;
+    font-size: var(--fs-body-sm);
+  }
+
+  .btn-tech-tab svg {
+    display: none; /* Simplify UI in mobile tabs */
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack portfolio items */
+  }
+
+  .testimonial-slide {
+    flex: 0 0 calc(50% - 16px); /* 2 Testimonials visible on tablet */
+  }
+}
+
+/* 4. Tablets & Larger Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --fs-hero-title: 2.5rem;
+    --fs-section-title: 2rem;
+  }
+
+  .hero-stats-panel {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--color-bg-dark);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border-dark);
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  .scroll-indicator-container {
+    display: none; /* Hide indicator since hero scrolls naturally */
+  }
+
+  .about-badge {
+    bottom: 10px;
+    left: 10px;
+    padding: 15px 25px;
+  }
+
+  .about-badge h3 {
+    font-size: 2rem;
+  }
+
+  .about-image-wrapper {
+    width: 100%;
+  }
+
+  /* Vertical Timeline Mobile conversion */
+  .timeline-line {
+    left: 30px; /* Shift timeline tracking to left margin */
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 0;
+    text-align: left !important;
+  }
+
+  .timeline-item-right {
+    left: 0;
+  }
+
+  .timeline-dot {
+    left: 22px !important;
+    right: auto !important;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 5. Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 10px 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .stats-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-slide {
+    flex: 0 0 100%; /* Show one slide on mobile */
+  }
+
+  .tech-tabs-menu {
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .tech-info {
+    padding: 24px;
+  }
+
+  .tech-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-header {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .faq-body-content {
+    padding: 0 20px 20px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .btn-newsletter-submit {
+    padding: 12px 0;
+    width: 100%;
+  }
+}
