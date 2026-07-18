@@ -122,10 +122,14 @@
   }
 
   .hero-section {
-    height: auto;
-    min-height: auto;
-    padding-top: 140px;
-    padding-bottom: 40px;
+    height: 75vh;
+    min-height: 520px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .hero-content {
+    bottom: 12%;
   }
 
   .scroll-indicator-container {
